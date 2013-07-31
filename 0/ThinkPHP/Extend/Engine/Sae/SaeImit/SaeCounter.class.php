@@ -67,7 +67,7 @@ class SaeCounter extends SaeObject {
     }
 
     //获得多个统计器，names为数组
-    public function mget($names) {
+    /*public function mget($names) {
         array_walk($names, function(&$name) {
                     $name = "'$name'";
                 });
@@ -78,7 +78,7 @@ class SaeCounter extends SaeObject {
             $ret[$r['name']] = $r['val'];
         }
         return $ret;
-    }
+    }*/
 
     public function remove($name) {
         if (!$this->exists($name))
