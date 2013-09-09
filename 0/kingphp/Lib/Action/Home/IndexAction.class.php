@@ -2,15 +2,15 @@
 // 本类由系统自动生成，仅供测试用途
 class IndexAction extends Action {
     public function index(){
-    	$this->logo = 'The blog of king';
-    	//dump(get_defined_constants(true)); 
-    	//echo __DIR__;EXIT;
-		//$this->display();
+        $this->logo = 'The blog of king';
+        //dump(get_defined_constants(true)); 
+        //echo __DIR__;EXIT;
+        //$this->display();
     }
 
     public function test(){
-    	echo 'hello world!';
-    	$this->display();
-    	//exit;
+        echo 'hello world!';
+        $this->display();
+        //exit;
     }
 }

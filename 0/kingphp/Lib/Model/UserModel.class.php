@@ -6,11 +6,10 @@
 *
 **/
 class UserModel extends Model{
-	public function __construct(){
+    
+    protected $tableName = 'user';
 
-	}
-
-	public function findByEmail($email){
-		return $this->where('user_login=' . $email)->find();
-	}
+    public function findByEmail($email){
+        return $this->where(array("user_email" => $email))->find();
+    }
 }
