@@ -18,6 +18,11 @@ $config = array(
 	'DEFAULT_GROUP' => 'Home',
 	//'TMPL_ACTION_ERROR' => APP_PATH.'/Tpl/Home/Default/Public/success.html',
 	//'TMPL_ACTION_SUCCESS' =>  APP_PATH.'/Tpl/Home/Default/Public/success.html',
+	'FRAMEWORKVERSION' => '3.1.3_full',
+	'TMPL_PARSE_STRING'  =>array(
+				     '__LAYOUT__' => APP_PATH . 'Tpl/Layout/', // layout
+				     '__Public__' => ROOT . 'Public/'
+	 				)
 	);
 return array_merge($database, $config);
 ?>

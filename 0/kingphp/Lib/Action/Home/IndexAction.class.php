@@ -3,9 +3,10 @@
 class IndexAction extends Action {
     public function index(){
         $this->logo = 'The blog of king';
+        // echo 'hello';
         //dump(get_defined_constants(true)); 
         //echo __DIR__;EXIT;
-        //$this->display();
+        $this->display();
     }
 
     public function test(){
